@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenos Sports - Lista de Treinadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/queries.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <header id="header"></header>
+
+
+
+    <section class=" athlete-hero">
+        <h1 class="text-start mb-5 fw-bold bebas fs-1 container">Conheça nossos atletas</h1>
+        <p class="text-start mb-5 fw-medium  fs-4 container">Nesta área, você pode filtrar e localizar atletas de
+            diferentes modalidades, níveis competitivos e região de atuação. Seja para montar uma equipe, organizar um
+            evento ou simplesmente acompanhar o desempenho de atletas promissores, aqui você encontra o perfil certo.
+        </p>
+    </section>
+
+
+    <!-- Athletes Section -->
+    <section class="py-5 bg-light" id="atletas">
+        <section class="container my-5 pb-5">
+            <h4 class="mb-4">Buscar por Atleta ou Treinador</h4>
+            <form class="row g-3">
+
+                <!-- Nome do Atleta -->
+                <div class="col-md-3">
+
+                    <input type="text" class="form-control" id="nomeAtleta"
+                        placeholder="Digite o nome do Atleta/Treinador">
+                </div>
+
+                <!-- Tipo de Esporte -->
+                <div class="col-md-3">
+
+                    <input type="text" class="form-control" id="nomeAtleta" placeholder="Digite o nome do Esporte">
+                </div>
+
+                <!-- Nível Competitivo -->
+                <div class="col-md-3">
+
+                    <select class="form-select" id="nivelCompetitivo">
+                        <option selected disabled>O que procura?</option>
+                        <option>Atleta</option>
+                        <option>Treinador(a)</option>
+
+                    </select>
+                </div>
+                <!-- Nível Competitivo -->
+                <div class="col-md-2">
+                    <select class="form-select" id="Região">
+                        <option selected disabled>Região</option>
+                        <option>AC - Acre</option>
+                        <option>AL - Alagoas</option>
+                        <option>AP - Amapá</option>
+                        <option>AM - Amazonas</option>
+                        <option>BA - Bahia</option>
+                        <option>CE - Ceará</option>
+                        <option>DF - Distrito Federal</option>
+                        <option>ES - Espírito Santo</option>
+                        <option>GO - Goiás</option>
+                        <option>MA - Maranhão</option>
+                        <option>MT - Mato Grosso</option>
+                        <option>MS - Mato Grosso do Sul</option>
+                        <option>MG - Minas Gerais</option>
+                        <option>PA - Pará</option>
+                        <option>PB - Paraíba</option>
+                        <option>PR - Paraná</option>
+                        <option>PE - Pernambuco</option>
+                        <option>PI - Piauí</option>
+                        <option>RJ - Rio de Janeiro</option>
+                        <option>RN - Rio Grande do Norte</option>
+                        <option>RS - Rio Grande do Sul</option>
+                        <option>RO - Rondônia</option>
+                        <option>RR - Roraima</option>
+                        <option>SC - Santa Catarina</option>
+                        <option>SP - São Paulo</option>
+                        <option>SE - Sergipe</option>
+                        <option>TO - Tocantins</option>
+                    </select>
+                </div>
+
+                <!-- Botões -->
+                <div class="col-md-5  order-last align-items-end justify-content-end">
+                    <button type="submit" class=" btn btn-primary me-3  rounded-2">Aplicar</button>
+                    <button type="reset" class="btn btn-light py-2 rounded-2 border">Limpar</button>
+                </div>
+
+            </form>
+        </section>
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Atleta Card 1-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/ana-silva.jpg" class="card-img-top" alt="Carlos Mendes">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Ana Silva</h5>
+                            <span class="badge bg-span mb-2">Capoeira</span>
+                            <span class="badge bg-span mb-2">Treinadora</span>
+                            <span class="badge bg-span mb-2">SP</span>
+                            <p class="card-text line-limit">Comecei na capoeira aos 8 anos, em um projeto social na
+                                periferia de São Paulo. O que começou como uma atividade extracurricular se transformou
+                                em minha paixão e profissão.</p>
+                            <a href="./atleta.html" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/carla-mendes.jpg" class="card-img-top" alt="Ana Silva">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Carla Mendes</h5>
+                            <span class="badge bg-span mb-2">Rugby Feminino</span>
+                            <span class="badge bg-span mb-2">Atleta</span>
+                            <span class="badge bg-span mb-2">RJ</span>
+                            <p class="card-text line-limit">Carla Mendes é uma atleta determinada e apaixonada pelo
+                                rugby, esporte que exige força, estratégia e espírito de equipe.</p>
+                            <a href="3" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/marcos-oliveira.jpg" class="card-img-top" alt="Carlos Mendes">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Marcos Oliveira</h5>
+                            <span class="badge bg-span mb-2">Bocha Paralimpica</span>
+                            <span class="badge bg-span mb-2">Atleta</span>
+                            <span class="badge bg-span mb-2">SP</span>
+                            <p class="card-text line-limit">Mateus é atleta paralímpico da classe BC3, especialista em
+                                bocha adaptada. Com precisão técnica e inteligência tática, ele se destaca pela
+                                comunicação refinada com seu assistente esportivo e pela capacidade de competir em alto
+                                nível internacional.</p>
+                            <a href="perfil.html?id=2" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta Card 4-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./../images/rentao-silva.jpg" class="card-img-top" alt="Ana Silva">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Renato Silva</h5>
+                            <span class="badge bg-span mb-2">Goalball</span>
+                            <span class="badge bg-span mb-2">Treinador</span>
+                            <span class="badge bg-span mb-2">SC</span>
+                            <p class="card-text line-limit">Especialista em esportes paralímpicos, Renato atua há mais
+                                de 10 anos.</p>
+                            <a href="perfil.html?id=1" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/luciana-torres.jpg" class="card-img-top" alt="Carlos Mendes">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Luciana Torres</h5>
+                            <span class="badge bg-span mb-2">Hóquei de Grama</span>
+                            <span class="badge bg-span mb-2">Atleta</span>
+                            <span class="badge bg-span mb-2">RN</span>
+                            <p class="card-text line-limit">Jogadora brasileira, referência no desenvolvimento do hóquei
+                                de grama.</p>
+                            <a href="perfil.html?id=2" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/diego-nakamura.jpg" class="card-img-top" alt="Carlos Mendes">
+                        <div class="card-body px-4 py-3">
+                            <h5 class="card-title fw-bold">Diego Nakamura</h5>
+                            <span class="badge bg-span mb-2">Badminton</span>
+                            <span class="badge bg-span mb-2">Treinador</span>
+                            <span class="badge bg-span mb-2">RJ</span>
+                            <p class="card-text line-limit">Diego é um dos principais nomes do badminton brasileiro.
+                                Atua como mentor de jovens talentos.</p>
+                            <a href="perfil.html?id=2" class="btn btn-primary mt-3  fw-medium">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue com os demais cards... -->
+                <!-- Maria Oliveira, João Santos, Fernanda Costa, Ricardo Almeida -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

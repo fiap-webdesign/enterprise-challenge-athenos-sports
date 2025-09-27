@@ -1,0 +1,272 @@
+/* Paleta de cores */
+:root {
+    --cor1: #d6d6d6;
+    --cor2: #121212;
+    --cor3: #f7fafc;
+    --cor4: #1a265a;
+    --cor5: #f1600d;
+    --cor6: #50a5b1;
+    --cor7: #50a6b1a4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: var(--cor3);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.spacing {
+    margin-top: 70px;
+}
+
+.hr-menuoff {
+    color: var(--cor5);
+}
+
+
+.bg-nav {
+    background: var(--cor4);
+}
+
+.no-border {
+    border: none;
+}
+
+.logo-header {
+    height: 4rem;
+}
+
+.logo-footer {
+    height: 6rem;
+}
+
+.hero {
+    height: 70vh;
+    background: var(--cor4);
+}
+
+.img-hero {
+    background-image: url(../images/hero-bg-alt2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-msg {
+
+    border-radius: 0.2rem;
+    background-color: var(--cor7);
+    color: var(--cor3);
+    height: 325px;
+
+}
+
+.fonte-nav {
+    color: var(--cor3);
+    font-weight: 600;
+}
+.fonte-nav:hover {
+    color: var(--cor5);
+}
+
+.u-fx {
+    position: relative;
+    text-decoration: none;
+}
+
+.u-fx::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor5);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.u-fx:hover::after {
+    transform: scaleX(1);
+}
+
+.footer-off {
+    background: var(--cor4);
+}
+
+.bg-cta {
+    background: var(--cor6);
+    height: 400px;
+    color: var(--cor3);
+}
+
+.valores-bg {
+    background: var(--cor6);
+    color: var(--cor3);
+}
+
+.btn-lg {
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+
+.btn-lg:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
+.text-hero {
+    color: var(--cor4);
+}
+
+.p-msg{
+    font-size: 20px;
+
+}
+
+.p2-msg{ 
+        font-size: 20px;
+
+}
+
+.h1-msg{
+        font-size: 32px;
+
+}
+
+.btn-hero {px
+    font-size: ;
+}
+
+/* Hero Section Pagina Atletas*/
+.athlete-hero {
+    background: linear-gradient(90deg, var(--cor6) 0% 0%, var(--cor5) 90%);
+    color: var(--cor3);
+    padding: 100px 0;
+    color: var(--cor3);
+}
+
+.bg-span {
+    background-color: var(--cor5);
+}
+
+/* Cards */
+.sport-card,
+.athlete-card {
+    transition: transform 0.3s;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.athlete-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sport-card:hover,
+.athlete-card:hover {
+    transform: translateY(-10px);
+}
+
+.sport-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.athlete-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--cor4);
+    border: none;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    color: var(--cor1);
+}
+
+.btn-primary:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--cor5) !important;
+}
+
+/* Footer */
+footer {
+    color: var(--cor3);
+    background: var(--cor4);
+}
+
+/* Ícones sociais */
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--cor3);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--cor6);
+}
+
+/* Limite de linhas para texto */
+.line-limit {
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.menu-atletas {
+    display: none;
+}
+

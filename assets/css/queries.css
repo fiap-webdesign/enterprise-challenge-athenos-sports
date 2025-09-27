@@ -1,0 +1,74 @@
+Paleta de cores
+:root {
+    --cor1: #d6d6d6;
+    --cor2: #121212;
+    --cor3: #f7fafc;
+    --cor4: #1a265a;
+    --cor5: #f1600d;
+    --cor6: #50a5b1;
+    --cor7: #50a6b1a4;
+}
+
+
+@media (max-width: 992px) {
+
+    .icone-rs {
+        display: none;
+    }
+
+    .fonte-nav {
+        color: var(--cor2);
+        font-weight: 600;
+    }
+
+    .i01 {
+        display: none;
+    }
+
+    .logo-header {
+        height: 55px;
+    }
+
+    .u-fx::after {
+        display: none;
+    }
+
+    .sm-remove {
+        display: none;
+    }
+
+    .hero-msg {
+
+        background-color: var(--cor6);
+
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .hero-msg {
+        transform: translateY(-110%);
+        width: 50%;
+        position: relative;
+
+    }
+
+    #esportes {
+        transform: translateY(-200px);
+    }
+
+
+}
+
+@media (max-width: 430px) {
+    .hero {
+        height: 25vh;
+
+    }
+
+    .hero-msg {
+        height: 70vh;
+    }
+
+}
