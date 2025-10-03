@@ -169,13 +169,6 @@ button {
     color: var(--cor-04);
     font-weight: 600;
 }
-.fonte-nav:hover  {
-    color: var(--cor-05);
-}
-
-.fonte-nav2:hover {
-    color: var(--cor-05)
-}
 
 
 .h-menu {
