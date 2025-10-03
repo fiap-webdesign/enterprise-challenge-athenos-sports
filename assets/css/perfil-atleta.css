@@ -23,6 +23,19 @@ body {
     background: var(--cor3);
 }
 
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
 img,
 picture,
 video,
@@ -50,13 +63,12 @@ ol {
 }
 
 .spacing {
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .hr-menuoff {
     color: var(--cor5);
 }
-
 
 .bg-nav {
     background: var(--cor4);
@@ -92,8 +104,7 @@ ol {
     border-radius: 0.2rem;
     background-color: var(--cor7);
     color: var(--cor3);
-    height: 325px;
-
+    height: 400px;
 }
 
 .fonte-nav {
@@ -102,6 +113,33 @@ ol {
 }
 .fonte-nav:hover {
     color: var(--cor5);
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 .u-fx {
@@ -135,11 +173,6 @@ ol {
     color: var(--cor3);
 }
 
-.valores-bg {
-    background: var(--cor6);
-    color: var(--cor3);
-}
-
 .btn-lg {
     background-color: var(--cor5);
     color: var(--cor3);
@@ -151,68 +184,99 @@ ol {
 }
 
 .text-hero {
-    color: var(--cor4);
+    color:var(--cor4);
 }
 
-.p-msg{
-    font-size: 20px;
 
-}
-
-.p2-msg{ 
-        font-size: 20px;
-
-}
-
-.h1-msg{
-        font-size: 32px;
-
-}
-
-.btn-hero {px
-    font-size: ;
-}
-
-/* Hero Section Pagina Atletas*/
 .athlete-hero {
-    background: linear-gradient(90deg, var(--cor6) 0% 0%, var(--cor5) 90%);
-    color: var(--cor3);
-    padding: 100px 0;
-    color: var(--cor3);
-}
-
-.bg-span {
-    background-color: var(--cor5);
-}
-
-/* Cards */
-.sport-card,
-.athlete-card {
-    transition: transform 0.3s;
-    border-radius: 12px;
-    overflow: hidden;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.athlete-card {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.sport-card:hover,
-.athlete-card:hover {
-    transform: translateY(-10px);
-}
-
-.sport-card img {
-    height: 200px;
-    object-fit: cover;
+    background: linear-gradient(135deg, var(--cor6), var(--cor5));
+    color: white;
+    padding: 80px 0 40px;
 }
 
 .athlete-img {
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-card {
+    border-left: 4px solid var(--cor5);
+    transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--cor5);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor6);
+}
+
+.btn-outline-primary {
+    border-color: var(--cor5);
+    color: var(--cor5);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--cor5);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--cor5) !important;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+}
+
+.cor-grad {
+    background: linear-gradient(135deg, var(--cor6), var(--cor4));
+}
+
+
+/* Ícones sociais */
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--cor3);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--cor5);
+}
+
+.footer-off {
+    background: var(--cor4);
+}
+
+/* Limite de linhas para o card */
+
+.line-limit {
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Botões */
@@ -245,7 +309,7 @@ footer {
 .social-icon {
     font-size: 1.5rem;
     margin-right: 15px;
-    color: var(--cor3);
+    color: var(--light);
     transition: color 0.3s ease;
 }
 
@@ -269,4 +333,29 @@ footer {
 .menu-atletas {
     display: none;
 }
+
+#quem-somos {
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
