@@ -1,107 +1,180 @@
-/* Paleta de cores */
-:root {
-    --cor1: #d6d6d6;
-    --cor2: #121212;
-    --cor3: #f7fafc;
-    --cor4: #1a265a;
-    --cor5: #f1600d;
-    --cor6: #50a5b1;
-    --cor7: #50a6b1a4;
-}
-
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-html,
-body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    background: var(--cor3);
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
+    border: 0;
+    outline: 0;
+    background: none;
     font: inherit;
+    vertical-align: baseline;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+/* Paleta de Cores com classes pré formatadas */
+:root {
+    --cor-01: #d6d6d6;
+    --cor-02: #121212;
+    --cor-03: #f7fafc;
+    --cor-04: #1a265a;
+    --cor-05: #f1600d;
+    --cor-06: #50a5b1;
+    --cor-07: #50a6b1b4;
+
+  /* Hover intensificado */
+  --hover-01: #b3480a; 
+  --hover-02: #121a3d; 
 }
 
+/* Cores para as fontes */
+.txt-01 {    color: var(--cor-01);}
+.txt-02 {    color: var(--cor-02);}
+.txt-03 {    color: var(--cor-03);}
+.txt-04 {    color: var(--cor-04);}
+.txt-05 {    color: var(--cor-05);}
+
+/* Fundo */
+.bg-01 {background-color: var(--cor-03); color: #000;}
+.bg-02 {background-color: var(--cor-07); color: var(--cor-03);}
+.bg-03 {background-color: var(--cor-05); color: var(--cor-03);}
+.bg-04 {background-color: var(--cor-04); color: var(--cor-01);}
+.bg-05 {background-color: #333;}
+.bg-gradiente {
+    background: linear-gradient(135deg, var(--cor-04), var(--cor-05));
+    color: white;
+    padding: 80px 0 40px;
+}
+
+
+/* Botões padrão */
+.btn-01 {
+        background-color: var(--cor-04);
+    color: var(--cor-03);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.btn-02 {
+    background-color: var(--cor-05);
+    color: var(--cor-03);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.btn-03 {
+    background-color: var(--cor-03);
+    color: var(--cor-05);
+    border: 1px solid var(--cor-05);
+    padding: 0.5rem 1rem;
+}
+
+.btn-icon:hover {
+    color: var(--cor-06);
+    transition: 0.2s;
+}
+
+/* Hover */
+.btn-01:hover {
+    background-color: var(--hover-01);
+    color: var(--cor-01)
+}
+.btn-02:hover {
+    background-color: var(--hover-02);
+    color: var(--cor-01)
+}
+.btn-03:hover {
+    background-color: var(--hover-01);
+    color: var(--cor-03)
+}
+
+
+/* Limite de linhas para os textos nos cards */
+.line-limit {
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Remove estilos padrão de listas */
 ul,
 ol {
     list-style: none;
 }
 
-.spacing {
-    margin-top: 70px;
+/* Remove estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.hr-menuoff {
-    color: var(--cor5);
+/* Remove estilos padrão de imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-
-.bg-nav {
-    background: var(--cor4);
+/* Remove estilos padrão de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.no-border {
+/* Define altura total para html e body */
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Remove estilos padrão de inputs */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
     border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    appearance: none;
+}
+
+/* Corrige botão para herdar estilo */
+button {
+    cursor: pointer;
+}
+
+/* Corrige elementos interativos */
+[disabled] {
+    cursor: not-allowed;
 }
 
 .logo-header {
-    height: 4rem;
-}
-
-.logo-footer {
-    height: 6rem;
-}
-
-.hero {
-    height: 70vh;
-    background: var(--cor4);
-}
-
-.img-hero {
-    background-image: url(../images/hero-bg-alt2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.hero-msg {
-
-    border-radius: 0.2rem;
-    background-color: var(--cor7);
-    color: var(--cor3);
-    height: 325px;
-
+    height: 3.3rem;
 }
 
 .fonte-nav {
-    color: var(--cor3);
+    color: var(--cor-03);
     font-weight: 600;
 }
-.fonte-nav:hover {
-    color: var(--cor5);
+.fonte-nav2 {
+    color: var(--cor-03);
+    font-weight: 600;
+}
+.fonte-nav:hover  {
+    color: var(--cor-05);
+}
+
+.fonte-nav2:hover {
+    color: var(--cor-05)
 }
 
 .u-fx {
@@ -116,7 +189,7 @@ ol {
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: var(--cor5);
+    background-color: var(--cor-05);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -125,148 +198,84 @@ ol {
     transform: scaleX(1);
 }
 
-.footer-off {
-    background: var(--cor4);
+.h-menu {
+    height: 75vh;
 }
 
-.bg-cta {
-    background: var(--cor6);
-    height: 400px;
-    color: var(--cor3);
-}
-
-.valores-bg {
-    background: var(--cor6);
-    color: var(--cor3);
-}
-
-.btn-lg {
-    background-color: var(--cor5);
-    color: var(--cor3);
-}
-
-.btn-lg:hover {
-    background-color: var(--cor4);
-    color: var(--cor1);
-}
-
-.text-hero {
-    color: var(--cor4);
-}
-
-.p-msg{
-    font-size: 20px;
+.bi-xbox {
+    font-size: 2rem;
 
 }
 
-.p2-msg{ 
-        font-size: 20px;
-
+.bd {
+    border: 2px solid;
 }
 
-.h1-msg{
-        font-size: 32px;
-
-}
-
-.btn-hero {px
-    font-size: ;
-}
-
-/* Hero Section Pagina Atletas*/
-.athlete-hero {
-    background: linear-gradient(90deg, var(--cor6) 0% 0%, var(--cor5) 90%);
-    color: var(--cor3);
-    padding: 100px 0;
-    color: var(--cor3);
-}
-
-.bg-span {
-    background-color: var(--cor5);
-}
-
-/* Cards */
-.sport-card,
-.athlete-card {
-    transition: transform 0.3s;
-    border-radius: 12px;
-    overflow: hidden;
+.bd-0 {
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.athlete-card {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.logo-footer {
+    height: 5rem;
 }
 
-.sport-card:hover,
-.athlete-card:hover {
-    transform: translateY(-10px);
+.carousel-indicators {
+    transform: translateY(50px);
 }
 
-.sport-card img {
-    height: 200px;
-    object-fit: cover;
+.img-slide {
+    height: 300px;
 }
 
 .athlete-img {
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border: 5px solid var(--cor-03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}   
+
+.achievement-card {
+    border-left: 4px solid var(--cor-05);
+    transition: transform 0.3s;
 }
 
-/* Botões */
-.btn-primary {
-    background-color: var(--cor4);
-    border: none;
-    padding: 10px 25px;
-    transition: background-color 0.3s ease;
-    color: var(--cor1);
+.achievement-card:hover {
+    transform: translateY(-5px);
 }
 
-.btn-primary:hover {
-    background-color: var(--cor5);
-    color: var(--cor2);
-}
-
-
-.navbar-brand {
-    font-weight: 700;
-    color: var(--cor5) !important;
-}
-
-/* Footer */
-footer {
-    color: var(--cor3);
-    background: var(--cor4);
-}
-
-/* Ícones sociais */
-.social-icon {
-    font-size: 1.5rem;
-    margin-right: 15px;
-    color: var(--cor3);
-    transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: var(--cor6);
-}
-
-/* Limite de linhas para texto */
-.line-limit {
-    display: -webkit-box;
-    display: box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.cor-grad {
+    background: linear-gradient(135deg, var(--cor-06), var(--cor-04));
 }
 
 
-.menu-atletas {
-    display: none;
-}
 
+
+
+@media (min-width: 992px) {
+
+    .card-hv {
+        transition: 0.2s ease-in-out;
+    }
+    
+    .card-hv:hover {
+        transform: translateY(-10px);
+        transition: 0.2s ease-in-out;
+    }
+
+    .hero-msg {
+        width: 600px;
+        position: relative;
+        transform: translateY(-30px);
+        
+    }
+
+    .carousel-control-prev-icon {transform: translateX(-120px);}
+
+    .carousel-control-next-icon {transform: translateX(120px);}
+
+    .fonte-nav2 {
+    color: var(--cor-04);
+    font-weight: 600;
+}
+}

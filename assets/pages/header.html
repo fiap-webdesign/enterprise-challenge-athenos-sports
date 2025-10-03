@@ -1,73 +1,67 @@
-
-    <!-- Barra de navegação mesclada com menu offcanva do Bootstrap transformando o menu "collapse" em um menu surgindo da lateral direita -->
-    <header class="bg-nav">
-        <nav class="navbar navbar-expand-lg fonte-nav ps-5" data-bs-theme="dark">
-            <div class="container-fluid ms-lg-3">
-                <a class="navbar-brand" href="#"><img class="logo-header" src="../../assets/images/logo5.png"
-                        alt="Logo Athenos Sport"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end  bg-light" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel" data-bs-theme="dark">
-                    <div class="offcanvas-header footer-off">
-                        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body me-lg-auto ps-5 ">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item ms-lg-2">
-                                <a class="nav-link fonte-nav u-fx" href="../../index.html">Home</a>
-                            </li>
-                            <hr class="d-lg-none hr-menuoff">
-                            <li class="nav-item ms-lg-2">
-                                <a class="nav-link fonte-nav u-fx" href="../../index.html#esportes">Esportes</a>
-                            </li>
-                            <hr class="d-lg-none hr-menuoff">
-                            <li class="nav-item">
-                                <a class="nav-link fonte-nav u-fx" href="../pages/lista-atletas.html">Atletas</a>
-                            </li>
-                            <hr class="d-lg-none hr-menuoff">
-                            <li class="nav-item ms-lg-2">
-                                <a class="nav-link fonte-nav u-fx" href="../pages/sobre-nos.html">Sobre</a>
-                            </li>
-                            <hr class="d-lg-none hr-menuoff">
-                            <li class="nav-item ms-lg-2">
-                                <a class="nav-link fonte-nav u-fx" href="#contato">Contato</a>
-                            </li>
-                            <hr class="d-lg-none hr-menuoff">
-
-                        </ul>
-                    </div>
-
-                    <!-- footer no menu lateral -->
-                    <div class="text-center p-2 d-lg-none pb-3 footer-off">
-                        <div class="icon-sociais fs-3" aria-label="Links para redes sociais">
-
-                            <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
-                                <i class="bi bi-facebook fs-4"></i>
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
-                                <i class="bi bi-instagram fs-4"></i>
-                            </a>
-                            <a href="https://twitter.com" target="_blank" class="text-white me-3">
-                                <i class="bi bi-twitter-x fs-4"></i>
-                            </a>
-                            <a href="https://www.youtube.com" target="_blank" class="text-white">
-                                <i class="bi bi-youtube fs-4"></i>
-                            </a>
-
-
-                        </div>
-                        <div class="d-flex justify-content-center p-3">
-                            <img src="../../assets/images/logo4.png" alt="" class="img-fluid" style="width: 150px;">
-                        </div>
-
-                    </div>
-                </div>
+<div id="topo"></div>
+<nav class="shadow navbar navbar-expand-lg bg-01" data-bs-theme="light">
+    <div class="container-fluid ps-lg-4" data-bs-theme="light">
+        <a class="navbar-brand me-5" href="#"><img class="logo-header" src="../../assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end  bg-04" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel" data-bs-theme="dark">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title txt-05" id="offcanvasRightLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </nav>
-    </header>
+            <div class="row ms-2 ">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link u-fx fonte-nav2" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <hr class="d-lg-none ">
+                        <li class="nav-item">
+                            <a class="nav-link u-fx fonte-nav2" aria-current="page"
+                                href="../../index.html#esportes">Esportes</a>
+                        </li>
+                        <hr class="d-lg-none ">
+                        <li class="nav-item">
+                            <a class="nav-link u-fx fonte-nav2 nav-atletas" href="/assets/pages/atleta.html">Atletas</a>
+                        </li>
+                        <hr class="d-lg-none nav-atletas">
+                        <li class="nav-item">
+                            <a class="nav-link u-fx fonte-nav2" href="/assets/pages/sobre-nos.html">Sobre</a>
+                        </li>
+                        <hr class="d-lg-none ">
+                        <li class="nav-item">
+                            <a class="nav-link u-fx fonte-nav2" href="#contato">Contato</a>
+                        </li>
+                        <hr class="d-lg-none ">
+                    </ul>
+                </div>
+
+                <div class="d-flex d-lg-none justify-content-center pt-5 p-3">
+                    <img src="../../assets/images/logo4.png" alt="" class="img-fluid" style="width: 170px;">
+                </div>
+                <div class="col-lg-3 mb-4 text-center d-lg-none">
+                    <h5 class="fw-bold mb-4">Redes Sociais</h5>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                        <i class="bi bi-facebook fs-4 btn-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+                        <i class="bi bi-instagram fs-4 btn-icon"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-white me-3">
+                        <i class="bi bi-twitter-x fs-4 btn-icon"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-white">
+                        <i class="bi bi-youtube fs-4 btn-icon"></i>
+                    </a>
+                </div>
+                <hr class="d-lg-none ">
+                <div class="d-lg-none">
+                    <p class="mb-0 text-center">&copy; 2025 Athenos Sports.</p>
+                    <p class="mb-0 text-center">Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+        </div>
     </div>
-    </div>
+</nav>
