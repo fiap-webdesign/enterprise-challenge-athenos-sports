@@ -166,7 +166,7 @@ button {
     font-weight: 600;
 }
 .fonte-nav2 {
-    color: var(--cor-03);
+    color: var(--cor-04);
     font-weight: 600;
 }
 .fonte-nav:hover  {
@@ -253,11 +253,6 @@ button {
     .carousel-control-prev-icon {transform: translateX(-120px);}
 
     .carousel-control-next-icon {transform: translateX(120px);}
-
-    .fonte-nav2 {
-    color: var(--cor-04);
-    font-weight: 600;
-}
 
 
 .u-fx {
