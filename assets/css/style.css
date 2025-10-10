@@ -41,7 +41,7 @@
 .bg-05 {background-color: #333;}
 .bg-gradiente {
     background: linear-gradient(135deg, var(--cor-04), var(--cor-05));
-    color: white;
+    color:var(--cor-03);
     padding: 80px 0 40px;
 }
 
@@ -169,6 +169,14 @@ button {
     color: var(--cor-04);
     font-weight: 600;
 }
+.fonte-nav:hover  {
+    color: var(--cor-05);
+}
+
+.fonte-nav2:hover {
+    color: var(--cor-05)
+}
+
 
 .h-menu {
     height: 75vh;
@@ -220,6 +228,52 @@ button {
     background: linear-gradient(135deg, var(--cor-06), var(--cor-04));
 }
 
+/* pagina esporte */
+.hero-section {
+    min-height: 70vh;
+    background: url('../images/capoeira-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--cor-04), var(--cor-05));
+    opacity: 0.7; /* Ajuste a transparência conforme o efeito desejado */
+    z-index: 1;
+}
+
+/* Conteúdo acima da gradient */
+.hero-section> * {
+    position: relative;
+    z-index: 2;
+}
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .card-athlete {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-athlete:hover {
+            transform: translateY(-10px);
+        }
+        .berimbau-icon {
+            font-size: 2rem;
+            color: var(--cor-05);
+        }
+
+        .location-card {
+            border-left: 6px solid var(--cor-05);
+        }
+/* fim pagina esporte */
+
 
 
 
@@ -246,6 +300,10 @@ button {
 
     .carousel-control-next-icon {transform: translateX(120px);}
 
+    .fonte-nav2 {
+    color: var(--cor-04);
+    font-weight: 600;
+}
 
 
 .u-fx {
