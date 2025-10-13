@@ -20,6 +20,7 @@ A solução desenvolvida consiste em uma plataforma web que destaca esportes inv
 ### Funcionalidades
 - Página inicial com destaques de esportes e atletas
 - Perfil de atletas, com biografia e conquistas (apenas a página de **Ana Silva** está habilitada para consulta)
+- Página do esporte desejado, apresentando mestres e atletas com diferentes graduações e anos de experiência. Inclui locais de treino em várias cidades do Brasil, informações sobre a história do esporte e seu patrimônio cultural, e um formulário de contato para aulas experimentais ou dúvidas. (apenas o esporte **Capoeira** esta disponível para consulta)
 - Navegação intuitiva e acessível
 - Seção sobre a equipe e contato
 
@@ -34,7 +35,8 @@ A solução desenvolvida consiste em uma plataforma web que destaca esportes inv
 ## Link para o Figma ##
 [Figma Athenos Sports](https://www.figma.com/design/oaT3mw1EpiRccJSZrxP0Tp/Concentrix?node-id=0-1&t=yEwS5CbTI9DN7Fpa-1)
 
-
+## Link YouTube ##
+[Video Pitch Athenos Sports](https://youtube.com/)
 ---
 
 Projeto desenvolvido para o Enterprise Challenge, promovido pela Concentrix em parceria com o Google.
