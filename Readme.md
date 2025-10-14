@@ -37,6 +37,7 @@ A solução desenvolvida consiste em uma plataforma web que destaca esportes inv
 
 ## Link Video Pitch ##
 [Video Pitch Enterprise Challenge](https://fiapcom-my.sharepoint.com/:v:/g/personal/rm563293_fiap_com_br/ETUNbmkgv4FInPwsKQAe2YYB2RAqf0uuF2CpcXXDAXweOQ)
+
 ---
 
 Projeto desenvolvido para o Enterprise Challenge, promovido pela Concentrix em parceria com o Google.
