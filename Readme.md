@@ -36,7 +36,7 @@ A solução desenvolvida consiste em uma plataforma web que destaca esportes inv
 [Figma Athenos Sports](https://www.figma.com/design/oaT3mw1EpiRccJSZrxP0Tp/Concentrix?node-id=0-1&t=yEwS5CbTI9DN7Fpa-1)
 
 ## Link Video Pitch ##
-[Video Pitch Enterprise Challenge](https://fiapcom-my.sharepoint.com/:v:/g/personal/rm563293_fiap_com_br/ETUNbmkgv4FInPwsKQAe2YYB73IoJ6xZ_TPPZE75UB8w9Q)
+[Video Pitch Enterprise Challenge](https://fiapcom-my.sharepoint.com/:v:/g/personal/rm563293_fiap_com_br/ETUNbmkgv4FInPwsKQAe2YYB2RAqf0uuF2CpcXXDAXweOQ)
 ---
 
 Projeto desenvolvido para o Enterprise Challenge, promovido pela Concentrix em parceria com o Google.
